@@ -8,7 +8,7 @@
 ## Assignment - Determine the big O
 Give the efficiency of each of the following code snippets
 
-Snippet EX - Big O: Answer given for this first example: O(n^2)
+Snippet EX - Big O: Answer given for this first example: O(n * m) because for every element in the rainbow array (n) we must visit every element in the hash for that rainbow-element (m). 
 ```ruby
 +  rainbow.each do |item|
  +    item.each do |key, value|
