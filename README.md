@@ -1,7 +1,6 @@
 # Evaluating Efficiency
 
-1. Read the following article on Big O: [Big O Notation & Complexity in Ruby](https://samurails.com/interview/big-o-notation-complexity-ruby/)
-2. [Big O Notation for Newbies with Ruby](http://www.datakicks.com/2016/06/04/big-o-notation.html)
+1. Read [Big O Notation for Newbies with Ruby](http://www.datakicks.com/2016/06/04/big-o-notation.html)
 2. Work through [this quiz](http://www.codequizzes.com/computer-science/beginner/big-o-algorithms) on Big O. Try out the code snippets and read the answers.
 3. Do the assignment below and submit a PR with your answers.
 
@@ -16,11 +15,11 @@ Give the efficiency of each of the following code snippets.
 
 Snippet 1 - Big O:
 ```ruby
-def contains?(array, value)
+def largest?(array, value)
   array.each do |item|
-    return true if item == value
+    return false if item > value
   end
-  return false
+  return true
 end
 ```
 
